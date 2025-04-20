@@ -14,6 +14,15 @@ conda create -n litllm python=3.11 -y
 pip install -r requirements.txt
 ```
 
+Please make sure you have the `OPENAI_API_KEY` set in your environment. We also used Semantic Scholar API to retrieve relevant papers. Follow the instructions on the official [website](https://www.semanticscholar.org/product/api#api-key) to get the API key. Please make sure you have the `S2_API_KEY` set in your environment. 
+
+```
+# For linux you can save your key in bashrc or zshrc.
+echo "export OPENAI_API_KEY='yourkey'" >> ~/.bashhrc
+echo "export S2_API_KEY='yourkey'" >> ~/.bashhrc
+```
+
+
 Run `python app.py`
 
 ## Citations
